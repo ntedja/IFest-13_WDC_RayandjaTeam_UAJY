@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/IFest-13_WDC_RayandjaTeam_UAJY/static/js/main.93743897.js",
+    "main.js": "/IFest-13_WDC_RayandjaTeam_UAJY/static/js/main.d0ae81bd.js",
     "index.html": "/IFest-13_WDC_RayandjaTeam_UAJY/index.html",
-    "main.93743897.js.map": "/IFest-13_WDC_RayandjaTeam_UAJY/static/js/main.93743897.js.map"
+    "main.d0ae81bd.js.map": "/IFest-13_WDC_RayandjaTeam_UAJY/static/js/main.d0ae81bd.js.map"
   },
   "entrypoints": [
-    "static/js/main.93743897.js"
+    "static/js/main.d0ae81bd.js"
   ]
 }
