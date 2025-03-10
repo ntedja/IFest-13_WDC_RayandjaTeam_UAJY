@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import { FaLeaf, FaRecycle, FaRegSmile, FaQuestionCircle, FaTshirt } from "react-icons/fa";
+import {
+  FaLeaf,
+  FaRecycle,
+  FaRegSmile,
+  FaQuestionCircle,
+  FaTshirt,
+} from "react-icons/fa";
 
 // Animasi fade-in
 const fadeIn = keyframes`
@@ -21,7 +27,7 @@ const HeroSection = styled.div`
   position: relative;
   width: 100%;
   height: 500px;
-  background: url('/assets/background.jpeg') center/cover no-repeat;
+  background: url("ntedja/assets/background.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +76,6 @@ const InfoContainer = styled.div`
   line-height: 1.8;
   text-align: center; /* Jika ingin teks di dalamnya juga rata tengah */
 `;
-
 
 const Highlight = styled.span`
   font-weight: bold;
@@ -127,7 +132,7 @@ const EduArticleCard = styled.a`
   color: inherit;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-5px);
   }
@@ -241,7 +246,8 @@ const ChatMessage = styled.div`
   padding: 0.8rem;
   border-radius: 10px;
   max-width: 75%;
-  align-self: ${({ sender }) => (sender === "user" ? "flex-end" : "flex-start")};
+  align-self: ${({ sender }) =>
+    sender === "user" ? "flex-end" : "flex-start"};
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 `;
 
@@ -268,7 +274,7 @@ const ChatButton = styled.button`
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
-  
+
   &:hover {
     background: #219150;
   }
@@ -281,7 +287,7 @@ const chatbotResponses = {
   "how to reduce fashion waste":
     "Start by buying less, recycling old clothes, and choosing brands that follow slow fashion principles. You can also try thrifting and upcycling.",
   "what are the alternatives to fast fashion":
-    "Alternatives include thrifting, supporting slow fashion, and choosing high-quality, durable products instead of cheap items that wear out quickly."
+    "Alternatives include thrifting, supporting slow fashion, and choosing high-quality, durable products instead of cheap items that wear out quickly.",
 };
 
 const Education = () => {
@@ -296,7 +302,9 @@ const Education = () => {
     setMessages((prev) => [...prev, userMessage]);
 
     setTimeout(() => {
-      const botResponse = chatbotResponses[chatInput.toLowerCase()] || "Sorry, I don't understand. Try asking another way.";
+      const botResponse =
+        chatbotResponses[chatInput.toLowerCase()] ||
+        "Sorry, I don't understand. Try asking another way.";
       const botMessage = { text: botResponse, sender: "bot" };
       setMessages((prev) => [...prev, botMessage]);
     }, 1000);
@@ -313,59 +321,107 @@ const Education = () => {
       <HeroSection>
         <HeroOverlay />
         <HeroText>
-            "The fashion industry produces 92 million tons of waste every year. It's time for change!"
+          "The fashion industry produces 92 million tons of waste every year.
+          It's time for change!"
         </HeroText>
       </HeroSection>
 
       <SectionTitle>🌱 Solutions for Sustainable Fashion</SectionTitle>
       <InfoContainer>
         <p>
-            The fashion industry is one of the biggest polluters. By choosing sustainable products, you can help reduce the negative impact on the environment and support ethical production.
+          The fashion industry is one of the biggest polluters. By choosing
+          sustainable products, you can help reduce the negative impact on the
+          environment and support ethical production.
         </p>
         <p>
-            Simple steps like choosing organic materials, recycling clothes, and buying second-hand items can make a big difference.
+          Simple steps like choosing organic materials, recycling clothes, and
+          buying second-hand items can make a big difference.
         </p>
       </InfoContainer>
 
       <SolutionsContainer>
         <SolutionCard>
-          <SolutionIcon><FaLeaf /></SolutionIcon>
+          <SolutionIcon>
+            <FaLeaf />
+          </SolutionIcon>
           <h3>Choose Organic Ingredients</h3>
-          <p>Choose clothes made from natural materials such as linen, hemp, or organic cotton.</p>
+          <p>
+            Choose clothes made from natural materials such as linen, hemp, or
+            organic cotton.
+          </p>
         </SolutionCard>
         <SolutionCard>
-          <SolutionIcon><FaRecycle /></SolutionIcon>
+          <SolutionIcon>
+            <FaRecycle />
+          </SolutionIcon>
           <h3>Recycle & Reuse</h3>
-          <p>Recycle and reuse old clothes to prevent them from ending up in landfills.</p>
+          <p>
+            Recycle and reuse old clothes to prevent them from ending up in
+            landfills.
+          </p>
         </SolutionCard>
         <SolutionCard>
-          <SolutionIcon><FaTshirt /></SolutionIcon>
+          <SolutionIcon>
+            <FaTshirt />
+          </SolutionIcon>
           <h3>Slow Fashion</h3>
-          <p>Support brands that produce high-quality and ethically made clothing.</p>
+          <p>
+            Support brands that produce high-quality and ethically made
+            clothing.
+          </p>
         </SolutionCard>
       </SolutionsContainer>
 
       <SectionTitle>📰 Educational Articles</SectionTitle>
       <ArticleSectionContainer>
-        <EduArticleCard href="https://www.bbc.com/fashion-environment" target="_blank">
-          <EduArticleImage src="/assets/lingkungan2.jpg" alt="Fashion Environment" />
+        <EduArticleCard
+          href="https://www.bbc.com/fashion-environment"
+          target="_blank"
+        >
+          <EduArticleImage
+            src="ntedja/assets/lingkungan2.jpg"
+            alt="Fashion Environment"
+          />
           <EduArticleContent>
-            <EduArticleTitle>How Fashion Affects the Environment?</EduArticleTitle>
-            <EduArticleDesc>BBC explains the massive impact of the fashion industry on pollution and global waste.</EduArticleDesc>
+            <EduArticleTitle>
+              How Fashion Affects the Environment?
+            </EduArticleTitle>
+            <EduArticleDesc>
+              BBC explains the massive impact of the fashion industry on
+              pollution and global waste.
+            </EduArticleDesc>
           </EduArticleContent>
         </EduArticleCard>
-        <EduArticleCard href="https://www.nytimes.com/sustainable-fashion" target="_blank">
-          <EduArticleImage src="/assets/trend.jpg" alt="Sustainable Fashion Trends" />
+        <EduArticleCard
+          href="https://www.nytimes.com/sustainable-fashion"
+          target="_blank"
+        >
+          <EduArticleImage
+            src="ntedja/assets/trend.jpg"
+            alt="Sustainable Fashion Trends"
+          />
           <EduArticleContent>
             <EduArticleTitle>Sustainable Fashion Trends</EduArticleTitle>
-            <EduArticleDesc>The New York Times discusses the shift in consumer behavior towards more ethical and sustainable fashion.</EduArticleDesc>
+            <EduArticleDesc>
+              The New York Times discusses the shift in consumer behavior
+              towards more ethical and sustainable fashion.
+            </EduArticleDesc>
           </EduArticleContent>
         </EduArticleCard>
-        <EduArticleCard href="https://www.nytimes.com/sustainable-fashion" target="_blank">
-          <EduArticleImage src="/assets/trend.jpg" alt="Sustainable Fashion Trends" />
+        <EduArticleCard
+          href="https://www.nytimes.com/sustainable-fashion"
+          target="_blank"
+        >
+          <EduArticleImage
+            src="ntedja/assets/trend.jpg"
+            alt="Sustainable Fashion Trends"
+          />
           <EduArticleContent>
             <EduArticleTitle>Sustainable Fashion Trends</EduArticleTitle>
-            <EduArticleDesc>The New York Times discusses the shift in consumer behavior towards more ethical and sustainable fashion.</EduArticleDesc>
+            <EduArticleDesc>
+              The New York Times discusses the shift in consumer behavior
+              towards more ethical and sustainable fashion.
+            </EduArticleDesc>
           </EduArticleContent>
         </EduArticleCard>
       </ArticleSectionContainer>
@@ -373,11 +429,17 @@ const Education = () => {
       <SectionTitle>😊 Testimonials</SectionTitle>
       <TestimonialSection>
         <TestimonialCard>
-          <TestimonialQuote>"Since supporting slow fashion, I feel more responsible for the environment. Every choice I make is an investment for the future!"</TestimonialQuote>
+          <TestimonialQuote>
+            "Since supporting slow fashion, I feel more responsible for the
+            environment. Every choice I make is an investment for the future!"
+          </TestimonialQuote>
           <TestimonialAuthor>- Anita, 30 years old</TestimonialAuthor>
         </TestimonialCard>
         <TestimonialCard>
-          <TestimonialQuote>"Recycling my old clothes has given new meaning to my lifestyle. It inspires me to keep innovating!"</TestimonialQuote>
+          <TestimonialQuote>
+            "Recycling my old clothes has given new meaning to my lifestyle. It
+            inspires me to keep innovating!"
+          </TestimonialQuote>
           <TestimonialAuthor>- Budi, 35 years old</TestimonialAuthor>
         </TestimonialCard>
       </TestimonialSection>
@@ -387,19 +449,22 @@ const Education = () => {
         FAQ
       </SectionTitle>
       <FAQSection>
-        {[ 
+        {[
           {
             question: "What is sustainable fashion?",
-            answer: "Sustainable fashion refers to clothing production that considers environmental, social, and economic impacts. It involves using eco-friendly materials and ethical practices."
+            answer:
+              "Sustainable fashion refers to clothing production that considers environmental, social, and economic impacts. It involves using eco-friendly materials and ethical practices.",
           },
           {
             question: "Why is fast fashion harmful to the environment?",
-            answer: "Fast fashion produces a large amount of waste, consumes a lot of water, and often involves production practices with significant environmental impact, including carbon emissions and water pollution."
+            answer:
+              "Fast fashion produces a large amount of waste, consumes a lot of water, and often involves production practices with significant environmental impact, including carbon emissions and water pollution.",
           },
           {
             question: "How can I support sustainable fashion?",
-            answer: "You can support sustainable fashion by choosing brands that follow ethical principles, buying second-hand items, recycling, and opting for high-quality, long-lasting clothing."
-          }
+            answer:
+              "You can support sustainable fashion by choosing brands that follow ethical principles, buying second-hand items, recycling, and opting for high-quality, long-lasting clothing.",
+          },
         ].map((item, index) => (
           <FAQItem key={index} onClick={() => toggleFAQ(index)}>
             <FAQQuestion>
@@ -421,11 +486,11 @@ const Education = () => {
           ))}
         </ChatMessages>
         <ChatInputContainer>
-          <ChatInput 
-            type="text" 
-            value={chatInput} 
-            onChange={(e) => setChatInput(e.target.value)} 
-            placeholder="Ask something about sustainable fashion..." 
+          <ChatInput
+            type="text"
+            value={chatInput}
+            onChange={(e) => setChatInput(e.target.value)}
+            placeholder="Ask something about sustainable fashion..."
           />
           <ChatButton onClick={handleSendMessage}>Send</ChatButton>
         </ChatInputContainer>

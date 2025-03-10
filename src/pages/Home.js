@@ -244,7 +244,7 @@ const Home = () => {
       {/* Section 1: Quote */}
       <Section>
         <ImageContainer>
-          <Image src="/assets/home1.png" alt="Fashion Model" />
+          <Image src="ntedja/assets/home1.png" alt="Fashion Model" />
         </ImageContainer>
         <TextContainer>
           <QuoteText>
@@ -260,7 +260,7 @@ const Home = () => {
       {/* Section 2: Fast Fashion Impact */}
       <Section>
         <ImageContainer>
-          <Image src="/assets/home2.png" alt="Fast Fashion Impact" />
+          <Image src="ntedja/assets/home2.png" alt="Fast Fashion Impact" />
         </ImageContainer>
         <TextContainer>
           <InfoText>

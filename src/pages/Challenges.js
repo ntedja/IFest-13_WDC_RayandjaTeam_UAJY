@@ -55,7 +55,7 @@ const ChallengesContainer = styled.div`
 const HeroSection = styled.div`
   width: 100%;
   height: 400px;
-  background: url('/assets/chal.jpg') center/cover no-repeat;
+  background: url('ntedja/assets/chal.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

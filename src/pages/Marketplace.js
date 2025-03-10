@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { products } from "./products"; 
+import { products } from "./products";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -76,21 +76,21 @@ const FashionItem = styled.span`
 
 const ProductCard = styled.div`
   background: white;
-  padding: 0.5rem; 
+  padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 `;
 
 const ProductImage = styled.img`
-  width: 80%; 
+  width: 80%;
   height: auto;
   border-radius: 8px;
   cursor: pointer;
 `;
 
 const ProductTitle = styled.h3`
-  font-size: 1rem; 
+  font-size: 1rem;
   margin-top: 0.5rem;
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -98,7 +98,7 @@ const ProductTitle = styled.h3`
 `;
 
 const ProductPrice = styled.p`
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
   color: rgb(0, 0, 0);
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
@@ -146,7 +146,7 @@ const Marketplace = () => {
 
   return (
     <PageContainer>
-      <TopImage src="/assets/marketplacetop.png" alt="Marketplace Top" />
+      <TopImage src="ntedja/assets/marketplacetop.png" alt="Marketplace Top" />
       <FilterSection>
         <SortBy>
           <SortLabel onClick={() => setIsDropdownOpen(!isDropdownOpen)}>

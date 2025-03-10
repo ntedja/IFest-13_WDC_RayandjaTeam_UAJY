@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const TradeContainer = styled.div`
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Source Sans Pro', sans-serif;
-  margin-top : 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 50px;
 `;
 
 const Title = styled.h1`
@@ -55,7 +55,7 @@ const Input = styled.input`
   border-radius: 5px;
   font-size: 1rem;
   &:focus {
-    border-color: #A27B5C;
+    border-color: #a27b5c;
     outline: none;
   }
 `;
@@ -69,13 +69,13 @@ const TextArea = styled.textarea`
   resize: vertical;
   min-height: 120px;
   &:focus {
-    border-color: #A27B5C;
+    border-color: #a27b5c;
     outline: none;
   }
 `;
 
 const SubmitButton = styled.button`
-  background: #A27B5C;
+  background: #a27b5c;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -130,7 +130,7 @@ const ItemDescription = styled.p`
 `;
 
 const TradeButton = styled.button`
-  background: #A27B5C;
+  background: #a27b5c;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -143,34 +143,33 @@ const TradeButton = styled.button`
   }
 `;
 
-
 const Trade = () => {
   const [tradeItems, setTradeItems] = useState([
     {
       id: 1,
       name: "Vintage Leather Jacket",
       description: "A classic vintage leather jacket in excellent condition.",
-      image: "/assets/jacket.jpg",
+      image: "ntedja/assets/jacket.jpg",
     },
     {
       id: 2,
       name: "Designer Handbag",
       description: "A stylish designer handbag, perfect for any occasion.",
-      image: "/assets/bags2.jpg",
+      image: "ntedja/assets/bags2.jpg",
     },
     {
       id: 3,
       name: "Limited Edition Sneakers",
       description: "Rare limited edition sneakers, barely worn.",
-      image: "/assets/shoes.jpg",
+      image: "ntedja/assets/shoes.jpg",
     },
   ]);
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    itemName: '',
-    itemDescription: '',
+    name: "",
+    email: "",
+    itemName: "",
+    itemDescription: "",
     itemImage: null,
   });
 
@@ -193,10 +192,10 @@ const Trade = () => {
     setTradeItems([...tradeItems, newItem]);
     alert("Trade request submitted successfully!");
     setFormData({
-      name: '',
-      email: '',
-      itemName: '',
-      itemDescription: '',
+      name: "",
+      email: "",
+      itemName: "",
+      itemDescription: "",
       itemImage: null,
     });
   };
@@ -213,23 +212,56 @@ const Trade = () => {
         <FormTitle>Submit Your Trade Request</FormTitle>
         <FormGroup>
           <Label>Your Name</Label>
-          <Input type="text" name="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} required />
+          <Input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
         </FormGroup>
         <FormGroup>
           <Label>Your Email</Label>
-          <Input type="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
         </FormGroup>
         <FormGroup>
           <Label>Item Name</Label>
-          <Input type="text" name="itemName" placeholder="Enter the item name" value={formData.itemName} onChange={handleChange} required />
+          <Input
+            type="text"
+            name="itemName"
+            placeholder="Enter the item name"
+            value={formData.itemName}
+            onChange={handleChange}
+            required
+          />
         </FormGroup>
         <FormGroup>
           <Label>Item Description</Label>
-          <TextArea name="itemDescription" placeholder="Describe the item you want to trade" value={formData.itemDescription} onChange={handleChange} required />
+          <TextArea
+            name="itemDescription"
+            placeholder="Describe the item you want to trade"
+            value={formData.itemDescription}
+            onChange={handleChange}
+            required
+          />
         </FormGroup>
         <FormGroup>
           <Label>Upload Image</Label>
-          <Input type="file" name="itemImage" accept="image/*" onChange={handleChange} required />
+          <Input
+            type="file"
+            name="itemImage"
+            accept="image/*"
+            onChange={handleChange}
+            required
+          />
         </FormGroup>
         <SubmitButton type="submit">Submit Trade Request</SubmitButton>
       </TradeForm>
@@ -252,4 +284,4 @@ const Trade = () => {
   );
 };
 
-export default Trade
+export default Trade;
