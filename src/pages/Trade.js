@@ -149,7 +149,7 @@ const Trade = () => {
       id: 1,
       name: "Vintage Leather Jacket",
       description: "A classic vintage leather jacket in excellent condition.",
-      image: "IFest-13_WDC_RayandjaTeam_UAJY/assets/jacket.jpg",
+      image: "IFest-13_WDC_RayandjaTeam_UAJY/assets/Jacket.jpg",
     },
     {
       id: 2,

@@ -55,7 +55,7 @@ const ChallengesContainer = styled.div`
 const HeroSection = styled.div`
   width: 100%;
   height: 400px;
-  background: url('IFest-13_WDC_RayandjaTeam_UAJY/assets/chal.jpg') center/cover no-repeat;
+  background: url("IFest-13_WDC_RayandjaTeam_UAJY/assets/chal.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
