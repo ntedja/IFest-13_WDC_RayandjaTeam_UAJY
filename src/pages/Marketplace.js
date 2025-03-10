@@ -146,7 +146,7 @@ const Marketplace = () => {
 
   return (
     <PageContainer>
-      <TopImage src="ntedja/assets/marketplacetop.png" alt="Marketplace Top" />
+      <TopImage src="IFest-13_WDC_RayandjaTeam_UAJY/assets/marketplacetop.png" alt="Marketplace Top" />
       <FilterSection>
         <SortBy>
           <SortLabel onClick={() => setIsDropdownOpen(!isDropdownOpen)}>

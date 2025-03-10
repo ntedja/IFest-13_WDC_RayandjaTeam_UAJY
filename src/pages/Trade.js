@@ -149,19 +149,19 @@ const Trade = () => {
       id: 1,
       name: "Vintage Leather Jacket",
       description: "A classic vintage leather jacket in excellent condition.",
-      image: "ntedja/assets/jacket.jpg",
+      image: "IFest-13_WDC_RayandjaTeam_UAJY/assets/jacket.jpg",
     },
     {
       id: 2,
       name: "Designer Handbag",
       description: "A stylish designer handbag, perfect for any occasion.",
-      image: "ntedja/assets/bags2.jpg",
+      image: "IFest-13_WDC_RayandjaTeam_UAJY/assets/bags2.jpg",
     },
     {
       id: 3,
       name: "Limited Edition Sneakers",
       description: "Rare limited edition sneakers, barely worn.",
-      image: "ntedja/assets/shoes.jpg",
+      image: "IFest-13_WDC_RayandjaTeam_UAJY/assets/shoes.jpg",
     },
   ]);
 

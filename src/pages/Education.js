@@ -27,7 +27,7 @@ const HeroSection = styled.div`
   position: relative;
   width: 100%;
   height: 500px;
-  background: url("ntedja/assets/background.jpeg") center/cover no-repeat;
+  background: url("IFest-13_WDC_RayandjaTeam_UAJY/assets/background.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -379,7 +379,7 @@ const Education = () => {
           target="_blank"
         >
           <EduArticleImage
-            src="ntedja/assets/lingkungan2.jpg"
+            src="IFest-13_WDC_RayandjaTeam_UAJY/assets/lingkungan2.jpg"
             alt="Fashion Environment"
           />
           <EduArticleContent>
@@ -397,7 +397,7 @@ const Education = () => {
           target="_blank"
         >
           <EduArticleImage
-            src="ntedja/assets/trend.jpg"
+            src="IFest-13_WDC_RayandjaTeam_UAJY/assets/trend.jpg"
             alt="Sustainable Fashion Trends"
           />
           <EduArticleContent>
@@ -413,7 +413,7 @@ const Education = () => {
           target="_blank"
         >
           <EduArticleImage
-            src="ntedja/assets/trend.jpg"
+            src="IFest-13_WDC_RayandjaTeam_UAJY/assets/trend.jpg"
             alt="Sustainable Fashion Trends"
           />
           <EduArticleContent>
